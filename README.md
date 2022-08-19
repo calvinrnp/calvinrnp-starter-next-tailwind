@@ -11,9 +11,11 @@
 - SEO metadata, JSON-LD and Open Graph tags with Next SEO
 
 ### Requirements
+
 - npm
 
 ### Getting Started
+
 Run the following command on your local environment:
 
 ```shell
@@ -31,6 +33,7 @@ npm run dev
 Open http://localhost:3000 with your favorite browser to see your project.
 
 ### Configuration
+
 Configure your SEO Meta tags in src/components/
 
 You can easily configure Next js Boilerplate. Please change the following file:
@@ -45,7 +48,9 @@ You can easily configure Next js Boilerplate. Please change the following file:
 1. Import the fonts in the Head component in src/pages/\_document.tsx
 2. Add the fonts in tailwind.config.js in theme.extend.fontFamily
    e.g:
+   ```
     fontFamily: {
     'sans': ['Roboto', 'Arial', 'sans-serif'],
     'display': ['Bebas Neue', 'Arial', 'sans-serif'],
     }
+   ```
