@@ -1,27 +1,55 @@
-# Next.js + Tailwind CSS Example
+# Next.js + Tailwind CSS + Typescript Starter
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+### Features
 
-## Deploy your own
+- [Next.js](https://nextjs.org) for Static Site Generator
+- Type checking [TypeScript](https://www.typescriptlang.org)
+- Integrate with [Tailwind CSS](https://tailwindcss.com)
+- Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals, Tailwind CSS)
+- Code Formatter with [Prettier](https://prettier.io)
+- Absolute Imports using `@` prefix
+- SEO metadata, JSON-LD and Open Graph tags with Next SEO
+- [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
+- One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
+- Maximize lighthouse score
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+### Requirements
+- npm
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+### Getting Started
 
-## How to use
+Run the following command on your local environment:
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+```shell
+git clone --depth=1 https://github.com/calvinrnp-starter-next-tailwind my-project-name
+cd my-project-name
+npm install
 ```
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+Then, you can run locally in development mode with live reload:
+
+```shell
+npm run dev
 ```
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+Open http://localhost:3000 with your favorite browser to see your project.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### Configuration
+Configure your SEO Meta tags in src/components/
+
+You can easily configure Next js Boilerplate. Please change the following file:
+
+- `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png`, `public/favicon-32x32.png` and `site.webmanifest`: your website favicon and information, you can generate your own from [favicon.io](https://favicon.io/)
+- `src/styles/global.css`: your CSS file using Tailwind CSS
+- `src/utils/AppConfig.ts`: configuration file
+- `src/templates/Main.tsx`: default theme
+
+### Custom Fonts
+
+1. Import the fonts in the Head component in src/pages/\_document.tsx
+2. Add the fonts in tailwind.config.js in theme.extend.fontFamily
+   e.g:
+   fontFamily: {
+   'sans': ['Roboto', 'Arial', 'sans-serif'],
+   'display': ['Bebas Neue', 'Arial', 'sans-serif'],
+   },
