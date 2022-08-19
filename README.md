@@ -7,6 +7,7 @@
 - Integrate with [Tailwind CSS](https://tailwindcss.com)
 - Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals, Tailwind CSS)
 - Code Formatter with [Prettier](https://prettier.io)
+- VS Code settings and extension recommendations
 - Absolute Imports using `@` prefix
 - SEO metadata, JSON-LD and Open Graph tags with Next SEO
 
