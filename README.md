@@ -9,15 +9,11 @@
 - Code Formatter with [Prettier](https://prettier.io)
 - Absolute Imports using `@` prefix
 - SEO metadata, JSON-LD and Open Graph tags with Next SEO
-- [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
-- One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
-- Maximize lighthouse score
 
 ### Requirements
 - npm
 
 ### Getting Started
-
 Run the following command on your local environment:
 
 ```shell
@@ -49,7 +45,7 @@ You can easily configure Next js Boilerplate. Please change the following file:
 1. Import the fonts in the Head component in src/pages/\_document.tsx
 2. Add the fonts in tailwind.config.js in theme.extend.fontFamily
    e.g:
-   fontFamily: {
-   'sans': ['Roboto', 'Arial', 'sans-serif'],
-   'display': ['Bebas Neue', 'Arial', 'sans-serif'],
-   },
+    fontFamily: {
+    'sans': ['Roboto', 'Arial', 'sans-serif'],
+    'display': ['Bebas Neue', 'Arial', 'sans-serif'],
+    }
