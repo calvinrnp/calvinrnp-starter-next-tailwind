@@ -20,7 +20,7 @@
 Run the following command on your local environment:
 
 ```shell
-git clone --depth=1 https://github.com/calvinrnp/calvinrnp-starter-next-tailwind my-project-name
+git clone --depth=1 https://github.com/crnp/starter-next-tailwind my-project-name
 cd my-project-name
 npm install
 ```
